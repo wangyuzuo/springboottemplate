@@ -30,4 +30,12 @@ public class HelloSpringBoot {
 
         return headers;
     }
+
+    @GetMapping("/hello1")
+    public MultiValueMap helloSpringBoot1(){
+        MultiValueMap<String, String> headers = new LinkedMultiValueMap();
+        headers.add("ttt", "hello");
+
+        return headers;
+    }
 }
